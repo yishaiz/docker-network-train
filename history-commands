@@ -1,0 +1,383 @@
+    1  cd /var/lib/docker/logs
+    2  cd /var/lib/docker/
+    3  ls
+    4  ls -la
+    5  ls -la[H
+    6  sudo ls -la
+    7  docker ps
+    8  sudo usermod -aG docker $USER
+    9  docker ps
+   10  cd/vag
+   11  cd /vagrant/
+   12  ls
+   13  ךד
+   14  ls
+   15  git clone git@github.com:yishaiz/opsschool-docker.git
+   16  ddddddddddd
+   17  cd /va
+   18  cd /vagg
+   19  cd /vagrant/
+   20  #
+   21  ls
+   22  cp opsschool-docker/app.py docker-network-train/
+   23  cp opsschool-docker/Dockerfile docker-network-train/
+   24  cd docker-network-train/
+   25  ls
+   26  cd ..
+   27  cp opsschool-docker/requirements.txte docker-network-train/
+   28  cp opsschool-docker/requirements.txt docker-network-train/
+   29  cd docker-network-train/
+   30  cd 01-base/
+   31  ls
+   32  docker build -t base:1 .
+   33  docker run -dit --name base-1 base
+   34  docker run -dit --name bas-1 base:1
+   35  wget 5000
+   36  docker run -dit --name base-1 -p 8001:5000 base:1
+   37  wget 5000
+   38  wget 8001
+   39  wget localhost5000
+   40  wget localhost:5000
+   41  wget localhost:8001
+   42  docker ps
+   43  docker ps -a
+   44  docker build -t base:2 .
+   45  docker images
+   46  docker run -dit --name base-2 -p 8001:5000 base:1
+   47  wget localhost:5000
+   48  wget localhost:8001
+   49  docker build -t base:3 .
+   50  docker run -dit --name base-22 -p 8001:5000 base:2
+   51  wget localhost:8001
+   52  wget localhost:5000
+   53  docker images
+   54  docker ps
+   55  docker run -dit --name base-3 -p 8001:5000 base:3
+   56  wget localhost:5000
+   57  wget localhost:8001
+   58  docker ps
+   59  docker run -it --name base-3 -p 8001:5000 base:3
+   60  docker run -it --name base-33 -p 8001:5000 base:3
+   61  docker psdocker 
+   62  docker image
+   63  docker images
+   64  docker ps
+   65  docker ps -a
+   66  docker rm $(docker ps -q -a | grep base)
+   67  docker rm $(docker ps | grep base)
+   68  docker rm $(docker ps -a | grep base)
+   69  docker ps -a
+   70  docker rm $(docker ps -a | grep temp)
+   71  docker ps -a
+   72  docker build -t base:1 .
+   73  docker run -it --name base-1 -p 8001:5000 base:1
+   74  docker build -t base:2 .
+   75  docker run -it --name base-2 -p 8001:5000 base:2
+   76  סdocker build -t base:2 .
+   77  docker build -t base:3 docker run -it --name base-3 -p 8001:5000 base:3
+   78  docker build -t base:3 .  ; docker run -it --name base-3 -p 8001:5000 base:3
+   79  docker build -t base:4 .  ; docker run -it --name base-4 -p 8001:5000 base:4
+   80  docker build -t base:4 .  ; docker run -it --name base-5 -p 8001:5000 base:5
+   81  docker build -t base:5 .  ; docker run -it --name base-5 -p 8001:5000 base:5
+   82  sudo apt-get update -y
+   83  sudo apt-get upgrade -y
+   84  docker build -t base:6 .  ; docker run -it --name base-6 -p 8001:5000 base:6
+   85  docker build -t base:7 .  ; docker run -it --name base-7 -p 8001:5000 base:7
+   86  docker build -t base:8 .  ; docker run -it --name base-8 -p 8001:5000 base:8
+   87  docker build -t base:9 .  ; docker run -it --name base-9 -p 8001:5000 base:9
+   88  docker build -t base:10 .  ; docker run -dit --name base-10 -p 8001:5000 base:10
+   89  docker ps
+   90  docker build -t base:11 .  ; docker run -it --name base-11 -p 8001:5000 base:11
+   91  docker ps -a
+   92  docker rm $(docker ps -qa)
+   93  docker ps -a
+   94  docker rm $(docker ps -qa) -f
+   95  docker build -t base:11 .  ; docker run -it --name base-11 -p 8001:5000 base:11
+   96  docker rm $(docker ps -qa) -f
+   97  docker build -t base:12 .  ; docker run -it --name base-12 -p 8001:5000 base:12
+   98  xdocker build -t base:12   ; docker run -itd --name base-12 p 8001:5000 base:1:1
+   99  docker rm $(docker ps -qa) -f
+  100  docker build -t base:12   ; docker run -itd --name base-12 p 8001:5000 base:1:1
+  101  docker build -t base:12   ; docker run -itd --name base-12 -p 8001:5000 base:1:1
+  102  docker build -t base:1 ; docker run -itd --name base-1 -p 8001:5000 base:1
+  103  wget localhost:5000
+  104  wget localhost:8001
+  105  wget localhost
+  106  netstat -plnt
+  107  xdocker build -t base:2 ; docker run -itd --name base-2 -p 8001:5000 base:2
+  108  docker rm $(docker ps -qa) -f
+  109  docker build -t base:2 ; docker run -itd --name base-2 -p 8001:5000 base:2
+  110  docker rm $(docker ps -qa) -f
+  111  docker build -t base:3; docker run -itd --name base-3 -p 8001:5000 base:3
+  112  docker build -t base:3
+  113  docker build -t base:3 .; docker run -itd --name base-3 -p 8001:5000 base:3
+  114  docker rm $(docker ps -qa) -f
+  115  docker images
+  116  docker rmi $(docker images -qa) -f
+  117  docker build -t base:1 .; docker run -itd --name base-1 -p 8001:5000 base:1
+  118  netstat -plnt
+  119  wget localhost:8001
+  120  docker ps
+  121  docker logs base-1 ~~~~~~~~
+  122  docker build -t base:1 .; docker run -itd --name base-1 -p 8001:5000 base:1
+  123  wget localhost:5000
+  124  docker build -t base:1 .; docker run -itd --name base-1 -p 8001:5000 base:1
+  125  גדךגצהדגה
+  126  kjsbdvjksdbjkjbds
+  127  cd /vagrant/
+  128  ls
+  129  cd docker-network-train/
+  130  ls
+  131  cd 01-base/
+  132  kjsbdvjksdbjkjbds
+  133  docker build -t base:2 .; docker run -itd --name base-2 -p 8001:5000 base:2
+  134  docker stop base-1 
+  135  docker build -t base:3 .; docker run -itd --name base-3 -p 8001:5000 base:3
+  136  wget localhost:8001
+  137  netstat -plnt
+  138  docker ps
+  139  docker logs base-3
+  140  docker ps
+  141  docker stop  base-3 
+  142  docker images
+  143  docker rmi $(docker images | grep base)
+  144  docker images
+  145  docker rmi $(docker images | grep base) -f
+  146  docker images
+  147  cd ..
+  148  cp 01-base/ 02-containers
+  149  cd 02
+  150  cp 01-base/ 02-containers/
+  151  cp -r 01-base/ 02-containers
+  152  ls
+  153  cd 02-containers/
+  154  docker ps
+  155  docker images
+  156  ls
+  157  cd redis/
+  158  docker build .
+  159  docker ps
+  160  docker psimages
+  161  docker images
+  162  docker run -dit --name redis-1 redis:5 
+  163  cd ..
+  164  cd app/
+  165  docker build -dit --name base:1 .
+  166  docker build -t --name base:1 .
+  167  docker build -t  base:1  .
+  168  docker images
+  169  docker run -dit --name base-1 base:1
+  170  docker run -dit --name base-01 base:1
+  171  docker ps
+  172  docker run -dit -p 8001:5000 --name base-01 base:1
+  173  docker run -dit --name base-001 -p 8001:5000   base:1
+  174  wget localhost:8001
+  175  docker logs base-001 
+  176  cd ..
+  177  cd redis/
+  178  docker run -dit  -p 6379:6379  --name redis-2 redis:5 
+  179  בג ץץ
+  180  cd ..
+  181  docker os
+  182  docker ps
+  183  netstat -plnt
+  184  docker ps
+  185  docker stop bas*
+  186  docker stop base-0
+  187  docker stop base-001
+  188  docker stop base-01
+  189  docker stop base-1
+  190  docker ps
+  191  docker stop redis-1
+  192  docker ps
+  193  docker images
+  194  docker run -dit --name base-001 -p 8001:5000   base:1
+  195  docker run -dit --name base-1 -p 8001:5000   base:1
+  196  docker run -dit --name base-2 -p 8001:5000   base:1
+  197  docker ps
+  198  docker ps -a
+  199  docker rm $(docker ps | grep base)
+  200  docker rm $(docker ps -a | grep base)
+  201  docker ps -a
+  202  docker run -dit --name base-2 -p 8001:5000   base:1
+  203  netstat -plnt
+  204  wget localhost:8001
+  205  docker logs base-2
+  206  docker run --name daemon -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
+  207  docker run --name daemon2   -di ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
+  208  docker run --name daemon3   -dti ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
+  209  docker logs -f daemon
+  210  docker ps
+  211  docker stop daemon
+  212  docker stop daemon -f
+  213  docker stop daemon2 -f
+  214  docker rm  daemon2  -f
+  215  docker rm  daemon  -f
+  216  docker rm  daemon3  -f
+  217  docker ps
+  218  docker stop base-2 
+  219  docker run -dit --name base-3 -p 8001:5000 --link redis-2:redis   base:1
+  220  docker ps
+  221  wget localhost:8001
+  222  wget localhost:8001 -O-
+  223  �םבלקר 
+  224  docker ps
+  225  docker stop base-3 
+  226  docker stop redis-2 
+  227  docker images
+  228  docker rm base
+  229  docker rm base-
+  230  docker rm base-2
+  231  docker rm base-3
+  232  docker rm base-2
+  233  docker images
+  234  docker rm base:1
+  235  docker images -a
+  236  docker ps -a
+  237  בג ץץ
+  238  cd ..
+  239  cd 03-containers-in-networks/
+  240  ls
+  241  cd app1/
+  242  cd ..
+  243  re redis/
+  244  cd redis/
+  245  docker network create network1
+  246  docker network create network2
+  247  docker network ls
+  248* 
+  249  history | grep redis
+  250  docker run -dit -p 6379:6379 --net=network1  --name redis-net-1:1 redis:5 
+  251  docker run -dit -p 6379:6379 --net=network1  --name redis-net-1 redis:5 
+  252  cd ..
+  253  history | grep link
+  254  docker imaghs
+  255  docker images
+  256* history | grep buil
+  257  docker images
+  258  cdocker build -t app-1:1 
+  259  cd app1/
+  260  docker build -t app-1:1 .
+  261  history | grep link
+  262  docker images
+  263  docker run -dit --name app-1 -p 8001:5000 --link redis-net-1:redis   app-1:1 
+  264  docker ps
+  265  docker run -dit --name app-1 -p 8001:5000 --net=network1 --link redis-net-1:redis   app-1:1 
+  266  docker ps -a
+  267  docker rm app-1 
+  268  docker run -dit --name app-1 -p 8001:5000 --net=network1 --link redis-net-1:redis   app-1:1 
+  269  history | grep wget
+  270  
+  271  history | grep wget
+  272  cd ..
+  273  cd redis/
+  274  docker run -dit -p 6379:6379 --net=network2 --name redis-net-2 redis:5
+  275  docker run -dit -p 6380:6379 --net=network2 --name redis-net-2 redis:5
+  276  docker ps
+  277  docker ps -a
+  278  docker rm redis-net-2 
+  279  docker run -dit -p 6380:6379 --net=network2 --name redis-net-2 redis:5
+  280  בג ץץ
+  281  בג
+  282  cd ..
+  283  cd app12
+  284  cd app2
+  285  ls
+  286  docker build -t app-2:1 .
+  287  docker run -dit --name app-2 -p 8002:5000 --net=network2 --link redis-net-2:redis app-2:1
+  288  2$ docker run -dit --name app-2 -p 8002:5000 --net=network2 --link redis-net-2:redis app-2:1
+  289  wget localhost:8002 -O-
+  290  wget localhost:8001 -O-
+  291  docker ps
+  292  docker logs app-2
+  293  docker ps
+  294  docker rm app-2
+  295  docker rm app-2 -f
+  296  docker images
+  297  docker rmi app-2
+  298  docker rmi app-2:1 
+  299  history
+  300  docker build -t app-2:1 .
+  301  docker run -dit --name app-2 -p 8002:5000 --net=network2 --link redis-net-2:redis app-2:1
+  302  wget localhost:8002 -O-
+  303  wget localhost:8001 -O-
+  304  wget localhost:8002 -O-
+  305  wget localhost:8001 -O-
+  306  docker ps
+  307  docker rm -f app-2 
+  308  docker rm -f app-1
+  309  docker images
+  310  docker rmi ap*
+  311  docker rmi $(docker images | grep app)
+  312  docker images
+  313  docker rmi base:1 
+  314  docker images
+  315  docker ps
+  316  cd ..
+  317  docker-compose
+  318  sudo apt  install docker-compose
+  319  docker-compose up
+  320  docker-compose up -d
+  321  docker ps
+  322  wget localhost:8001
+  323  docker ps
+  324  docker rm 04
+  325  docker rm 04do
+  326  docker rm ce
+  327  docker-compose down
+  328  docker-compose up -d
+  329  wget localhost:8001
+  330  wget localhost:8001 -O-
+  331  lastlog
+  332  ls
+  333  cd ..
+  334  cd 05-docker-compose05-with-networks/
+  335  docker images -a
+  336  docker ps -a
+  337  docker compose up -d
+  338  docker-compose up -d
+  339  docker ps
+  340  docker stop $(docker ps )
+  341  docker ps
+  342  docker-compose up -d
+  343  docker ps
+  344  history | grep local
+  345  wget localhost:8001
+  346  wget localhost:8002
+  347  docker logs d2
+  348  docker logs c12
+  349  docker logs d2
+  350  docker logs d2 --vvv
+  351  docker logs d2 -vvv
+  352  docker-compose up -d
+  353  docker-compose up 
+  354  docker-compose down
+  355  docker ps
+  356  docker ps -a
+  357  docker rm 3a
+  358  docker rm 2e
+  359  docker rm $(docker ps -a -q)
+  360  docker ps 
+  361  docker images
+  362  docker rmi $(docker image -a -q)
+  363  docker rmi $(docker images -a -q)
+  364  docker-compose up -d
+  365  docker-compose down
+  366  docker-compose up -d
+  367  wget -O- localhost:8001
+  368  docker  ps
+  369* docke
+  370  docker-compose down
+  371  docker-compose up
+  372  docker-compose down
+  373  docker-compose up
+  374  docker-compose down
+  375  docker-compose up
+  376  docker-compose down
+  377  docker-compose up
+  378  docker network create network
+  379  docker network create network1
+  380  docker network remove  network
+  381  docker-compose up
+  382  cd ..
+  383  history > history-commands

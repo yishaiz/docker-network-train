@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+  
+  web1:
+    build:
+      context: ./app1
+      dockerfile: Dockerfile
+    command: python app.py
+    ports:
+     - "8001:5000"
+    links:
+     - redis-1
+    networks:
+     - network1
+  
+  redis-1:
+    image: redis
+    ports:
+     - "6379:6379"
+    networks:
+     - network1
+       
+  web2:
+    build:
+      context: ./app2
+      dockerfile: Dockerfile
+    command: python app.py
+    ports:
+     - "8002:5000"
+    links:
+     - redis-2
+    networks:
+     - network2
+  
+  redis-2:
+    image: redis
+    ports:
+     - "6380:6379"
+    networks:
+     - network2
+       
+networks:
+  network1:
+    driver: bridge
+  network2:
+    driver: bridge
+
+
+    # volumes:
+    #  - ./web:/code # modified here to take into account the new app path
+
+    # environment:
+    #  - DATADOG_HOST=datadog # used by the web app to initialize the Datadog library
+
